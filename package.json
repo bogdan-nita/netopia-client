@@ -7,9 +7,9 @@
   "scripts": {
     "build": "tsc",
     "clean": "npx rimraf dist",
-    "publish:major": "npm version major --force && npm publish",
-    "publish:minor": "npm version minor --force && npm publish",
-    "publish:patch": "npm version patch --force && npm publish",
+    "publish:major": "npm version major && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:patch": "npm version patch && npm publish",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
@@ -21,13 +21,18 @@
   ],
   "author": "Bogdan Nita",
   "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
-    "typescript": "^5.6.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "typescript": "^5.6.3",
     "@types/axios": "^0.9.36",
     "@types/node": "^22.8.4"
   }

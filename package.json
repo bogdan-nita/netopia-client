@@ -1,0 +1,33 @@
+{
+  "name": "netopia-client",
+  "description": "A fully-typed, TypeScript-based client for the Netopia payments API V2.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "publish:major": "npm version major --force && npm publish",
+    "publish:minor": "npm version minor --force && npm publish",
+    "publish:patch": "npm version patch --force && npm publish",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "netopia",
+    "mobilpay",
+    "payments",
+    "typeScript",
+    "client"
+  ],
+  "author": "Bogdan Nita",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/node": "^22.8.4"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "netopia-client",
   "description": "A fully-typed, TypeScript-based client for the Netopia payments API V2.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

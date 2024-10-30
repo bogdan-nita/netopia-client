@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf dist",
+    "clean": "del -f ./dist",
     "publish:major": "npm version major --force && npm publish",
     "publish:minor": "npm version minor --force && npm publish",
     "publish:patch": "npm version patch --force && npm publish",
